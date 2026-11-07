@@ -10,13 +10,13 @@ class GradeCalculatorTest {
     @Test
     void testTotal() {
         assertEquals(225,
-            GradeCalculator.calculateTotal(75, 68, 82));
+            GradeCalculator.calculateTotal(75));
     }
 
     @Test
     void testAverage() {
         assertEquals(75.0,
-            GradeCalculator.calculateAverage(75, 68, 82));
+            GradeCalculator.calculateAverage(75));
     }
 
     @Test
