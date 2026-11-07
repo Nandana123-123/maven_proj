@@ -1,36 +1,40 @@
+
 package nandana_aiml.mavenn_github_project;
+
+import java.util.Scanner;
 
 public class GradeCalculator {
 
-    public static int calculateTotal(int m1) {
-        return m1 ;
-    }
+    public static char calculateGrade(int mark) {
 
-    public static double calculateAverage(int m1) {
-        return calculateTotal(m1);
-    }
-
-    public static char calculateGrade(double average) {
-
-        if (average >= 80) {
+        if (mark >= 80) {
             return 'A';
-        } else if (average >= 60) {
+        } 
+        else if (mark >= 60) {
             return 'B';
-        } else {
+        } 
+        else {
             return 'C';
         }
     }
 
     public static void main(String[] args) {
 
-        int m1 = 75;
+        Scanner sc = new Scanner(System.in);
 
-        int total = calculateTotal(m1);
-        double average = calculateAverage(m1);
-        char grade = calculateGrade(average);
+        System.out.print("Enter student mark: ");
+        int mark = sc.nextInt();
 
-        System.out.println("Total: " + total);
-        System.out.println("Average: " + average);
-        System.out.println("Grade: " + grade);
+        if (mark < 0 || mark > 100) {
+            System.out.println("Invalid marks! Enter marks between 0 and 100.");
+        } 
+        else {
+            char grade = calculateGrade(mark);
+
+            System.out.println("Student Mark: " + mark);
+            System.out.println("Grade: " + grade);
+        }
+
+        sc.close();
     }
 }
