@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: nandana_aiml.mavenn_github_project.GradeCalculatorTest
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.029 s -- in nandana_aiml.mavenn_github_project.GradeCalculatorTest
